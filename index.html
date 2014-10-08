@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>v0: Aspect Ratio</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="v0-aspect-ratio.js"></script>
+
+<style>
+	body {
+	background-color: black;
+	font-family: helvetica;
+	margin: 0;
+	}
+	.object-1 {
+	margin: 60px auto;
+	width: 80%;
+	height: 400px;
+	background-color: yellow;
+	}
+	.object-2 {
+	margin: 60px auto;
+	width: 30%;
+	height: 800px;
+	background-color: red;
+	}
+	.output {
+	position:fixed;
+	z-index: 999;
+	color: white;
+	font-size: 50px;
+	top: 0;
+	left: 0;
+	}
+</style>
+
+<script>
+	$(document).ready(function() {
+
+		aspectRatio();
+
+	});
+</script>
+
+</head>
+<body>
+
+	<div class="object-1 v0-aspect-ratio"></div>
+	<div class="object-2 v0-aspect-ratio"></div>
+	<div class="output">test</div>
+
+</body>
+</html>
